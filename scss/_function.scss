@@ -1,0 +1,7 @@
+@function set-text-color(bg_color) {
+  @if (lightness($bg_color) > 50) {
+    @return #000000;
+  } @else {
+    @return #ffffff;
+  }
+}

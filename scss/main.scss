@@ -1,13 +1,14 @@
 @import "variables";
+@import "function";
 
 body {
-  font-family;: 100% "Space Mono", monospace;
-  color: $text-color;
+  font-family: 100% "Space Mono", monospace;
+  color: set-text-color($bg_dark);
   margin: 0px;
   padding: 0px;
-  background-color: $bg_color;
-  background-image: $bg_img
-  background-size: $bg-size;
+  background-color: $bg_dark;
+  background-image: $bg_img;
+  background-size: $bg_size;
   background-position: $bg-position;
   background-attachment: fixed;
 }
