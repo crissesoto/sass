@@ -1,14 +1,32 @@
 @import "variables";
 @import "function";
+@import "mixin";
 
 body {
   font-family: 100% "Space Mono", monospace;
-  color: set-text-color($bg_dark);
+  color: set-text-color($bg_light);
   margin: 0px;
   padding: 0px;
-  background-color: $bg_dark;
+  background-color: $bg_light;
   background-image: $bg_img;
   background-size: $bg_size;
   background-position: $bg-position;
   background-attachment: fixed;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+
+  section {
+    flex-grow: 1;
+    flex-basis: 45%;
+    border: 1px silver solid;
+    @include box-shadow(10px 10px 19px -4px rgba(255, 255, 255, 0.75));
+    padding: 16px;
+    margin: 16px;
+    clear: both;
+    overflow: auto;
+    box-sizing: border-box;
+  }
 }
