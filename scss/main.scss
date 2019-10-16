@@ -50,12 +50,36 @@ article {
     padding: 1em 1.5em;
     display: block;
     word-wrap: break-word;
+
+    &.before {
+      float: left;
+      width: 40%;
+    }
+
+    &.after {
+      float: right;
+      width: 40%;
+    }
+  }
+
+  h2 {
+    @extend %heading-text-color;
+
+  h1 {
+    @extend %heading-text-color;
+    text-align: center;
+  }
+
+  h6 {
+    @extend %heading-text-color;
+    text-align: center;
+    font-size: 2em;
+    padding: 32px;
+    margin-bottom: 0px;
+    color: #6B8EFF
   }
 }
 
-.message {
-  @extend %message-shared;
-}
 .success {
   @extend %message-shared;
   background-color: green;
@@ -67,4 +91,8 @@ article {
 .warning {
   @extend %message-shared;
   background-color: orange;
+}
+
+footer h6{
+  padding: $padding * 4;
 }
