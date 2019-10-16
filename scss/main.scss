@@ -13,6 +13,8 @@ body {
   background-size: $bg_size;
   background-position: $bg-position;
   background-attachment: fixed;
+  @include redLink;
+  @include blueLink;
 }
 
 article {
@@ -65,34 +67,37 @@ article {
   h2 {
     @extend %heading-text-color;
 
-  h1 {
-    @extend %heading-text-color;
-    text-align: center;
+    h1 {
+      @extend %heading-text-color;
+      text-align: center;
+    }
+
+    h6 {
+      @extend %heading-text-color;
+      text-align: center;
+      font-size: 2em;
+      padding: 32px;
+      margin-bottom: 0px;
+      color: #6b8eff;
+    }
   }
 
+  .success {
+    @extend %message-shared;
+    background-color: green;
+  }
+  .error {
+    @extend %message-shared;
+    background-color: red;
+  }
+  .warning {
+    @extend %message-shared;
+    background-color: orange;
+  }
+}
+
+footer {
   h6 {
-    @extend %heading-text-color;
-    text-align: center;
-    font-size: 2em;
-    padding: 32px;
-    margin-bottom: 0px;
-    color: #6B8EFF
+    padding: $padding * 4;
   }
-}
-
-.success {
-  @extend %message-shared;
-  background-color: green;
-}
-.error {
-  @extend %message-shared;
-  background-color: red;
-}
-.warning {
-  @extend %message-shared;
-  background-color: orange;
-}
-
-footer h6{
-  padding: $padding * 4;
 }
