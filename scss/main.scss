@@ -1,0 +1,13 @@
+@import "variables";
+
+body {
+  font-family;: 100% "Space Mono", monospace;
+  color: $text-color;
+  margin: 0px;
+  padding: 0px;
+  background-color: $bg_color;
+  background-image: $bg_img
+  background-size: $bg-size;
+  background-position: $bg-position;
+  background-attachment: fixed;
+}
