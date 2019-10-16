@@ -4,7 +4,7 @@ $bg_bright: red;
 $bg_light: silver;
 
 // background
-$bg-img: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparent 40px),
+$bg_img: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparent 40px),
   radial-gradient(#fff, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
   radial-gradient(#fff, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
   radial-gradient(
@@ -13,10 +13,12 @@ $bg-img: radial-gradient(#fff, rgba(255, 255, 255, 0.2) 2px, transparent 40px),
     transparent 30px
   );
 
-$bg-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+$bg_size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
 
-$bg-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+$bg_position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 
 // general
 
 $font: 100% "Space Mono", monospace;
+$padding: 8px;
+$margin: 8px;
