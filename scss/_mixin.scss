@@ -3,21 +3,3 @@
   -moz-box-shadow: $porperty;
   box-shadow: $porperty;
 }
-
-@mixin redLink {
-  a {
-    color: black;
-    &.red:visited {
-      color: red;
-    }
-  }
-}
-
-@mixin blueLink {
-  a {
-    color: black;
-    &.blue:visited {
-      color: blue;
-    }
-  }
-}

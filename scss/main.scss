@@ -13,8 +13,6 @@ body {
   background-size: $bg_size;
   background-position: $bg-position;
   background-attachment: fixed;
-  @include redLink;
-  @include blueLink;
 }
 
 article {
